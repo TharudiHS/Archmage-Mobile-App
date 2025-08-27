@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:archmage_app/components/app_bar.dart';
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
@@ -20,11 +21,7 @@ class AboutPage extends StatelessWidget {
               child: RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: AppColors.black,
-                    height: 1.5,
-                  ),
+                  style: TextStyles.size16visbycfmediumblack,
                   children: [
                     const TextSpan(text: 'With over 15 years '),
                     TextSpan(
@@ -71,25 +68,18 @@ class AboutPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'What is',
-                    style: TextStyle(color: AppColors.white, fontSize: 45),
-                  ),
+                  const Text('What is', style: TextStyles.size45visbycfregular),
                   const SizedBox(height: 5),
                   const Text(
                     'Archmage',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontSize: 45,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyles.size45WeightboldvisbycfBoldwhite,
                   ),
                   const SizedBox(height: 4),
                   Row(
                     children: [
                       const Text(
                         'ark·mage',
-                        style: TextStyle(color: AppColors.white, fontSize: 20),
+                        style: TextStyles.size20visbycfmedium,
                       ),
                       const SizedBox(width: 6),
                       Icon(Icons.volume_up, color: AppColors.white, size: 20),
@@ -105,12 +95,7 @@ class AboutPage extends StatelessWidget {
                     '''Archmage Solutions (Pvt) Ltd is a Sri Lankan based leading product innovation house, established in 2005 as Archmage (Pvt) Ltd. We are a team of passionate creatives, developers and marketers offering end-to-end IT solutions, strategic technology consulting and product development services in Web, Mobile, Social, and Analytics. The company started off as a free-lancing software solution provider built upon the shoulders of a team of five passionate and aspiring Sri Lankan entrepreneurs.
 
 Archmage's specialty is tailor-made solutions for how you work, sell, and grow. We go beyond conception to deliver effective and engaging creative experiences. Archmage works with entrepreneurs, startups and established organizations to achieve quality results, and by leveraging the complementary capabilities of the latest technological trends, Archmage translates business problems into scalable, future-proof software solutions. Having successfully managed over 450+ projects over the past 17 years, Archmage has accumulated an enviable and varied clientele including clients from United Kingdom, United States, Australia, Canada, India and Singapore.''',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontFamily: 'visbycf-medium',
-                      fontSize: 18,
-                      height: 1.5,
-                    ),
+                    style: TextStyles.size18visbycfmediumwhite,
                   ),
                 ],
               ),
@@ -120,11 +105,7 @@ Archmage's specialty is tailor-made solutions for how you work, sell, and grow. 
             const Text(
               'Archmage\nthrough the years',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-                color: AppColors.black,
-              ),
+              style: TextStyles.size25WeightboldvisbycfBoldblack,
             ),
             const SizedBox(height: 24),
 
@@ -175,31 +156,15 @@ Archmage's specialty is tailor-made solutions for how you work, sell, and grow. 
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Our',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontSize: 55,
-                      fontFamily: 'visbycf-medium',
-                    ),
-                  ),
+                  const Text('Our', style: TextStyles.size55visbycfmedium),
                   const Text(
                     'Expertise',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontSize: 55,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'visbycf-medium',
-                    ),
+                    style: TextStyles.size55Weightboldvisbycfmedium,
                   ),
                   const SizedBox(height: 30),
                   const Text(
                     'With Archmage you get more than just a pretty user interface.',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontSize: 18,
-                      fontFamily: 'visbycf-medium',
-                    ),
+                    style: TextStyles.size18visbycfmediumwhite,
                   ),
                   const SizedBox(height: 50),
 
@@ -243,22 +208,12 @@ Archmage's specialty is tailor-made solutions for how you work, sell, and grow. 
 
                   const Text(
                     'How we\nProcess',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontSize: 55,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'visbycf-medium',
-                    ),
+                    style: TextStyles.size55Weightboldvisbycfmedium,
                   ),
                   const SizedBox(height: 8),
                   const Text(
                     'What sets us apart from many software\ndevelopment companies is we are with you all the way!\n\nFrom initial design and development, through to hosting, launch and aftersales ongoing support we do not end our relationship when your website goes live.',
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontSize: 18,
-                      height: 1.5,
-                      fontFamily: 'visbycf-medium',
-                    ),
+                    style: TextStyles.size18visbycfmediumwhite,
                   ),
                   const SizedBox(height: 40),
 
@@ -310,26 +265,11 @@ Widget _buildTimelineItem({
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                year,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.black,
-                ),
-              ),
+              Text(year, style: TextStyles.size20WeightboldvisbycfBold),
               const SizedBox(height: 10),
               Image.asset(imagePath, height: 100, fit: BoxFit.contain),
               const SizedBox(height: 10),
-              Text(
-                description,
-                style: const TextStyle(
-                  fontSize: 14,
-                  height: 1.5,
-                  fontFamily: 'visbycf-medium',
-                  color: AppColors.black,
-                ),
-              ),
+              Text(description, style: TextStyles.size14visbycfmediumblack),
             ],
           ),
         ),
@@ -353,27 +293,11 @@ Widget _buildExpertiseItem(IconData icon, String title, String description) {
           children: [
             Container(width: 3, height: 24, color: AppColors.red),
             const SizedBox(width: 8),
-            Text(
-              title,
-              style: const TextStyle(
-                color: AppColors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'visbycf-medium',
-              ),
-            ),
+            Text(title, style: TextStyles.size20WeightboldvisbycfBoldwhite),
           ],
         ),
         const SizedBox(height: 12),
-        Text(
-          description,
-          style: TextStyle(
-            color: AppColors.white,
-            fontSize: 15,
-            height: 1.4,
-            fontFamily: 'visbycf-medium',
-          ),
-        ),
+        Text(description, style: TextStyles.size15visbycfmedium),
       ],
     ),
   );
@@ -428,12 +352,9 @@ Widget _buildProcessStep(
       Text(
         title,
         textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: AppColors.white,
-          fontSize: 14,
-          fontWeight: FontWeight.bold,
-        ),
+        style: TextStyles.size14WeightboldvisbycfBold,
       ),
+
       if (showConnector) ...[
         const SizedBox(height: 20),
         // centered thin connector line
@@ -480,11 +401,7 @@ Widget _buildDottedBoxCenter({
       Text(
         topTitle,
         textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: AppColors.white,
-          fontSize: 14,
-          fontWeight: FontWeight.bold,
-        ),
+        style: TextStyles.size14WeightboldvisbycfBold,
       ),
       const SizedBox(height: 20),
 
@@ -504,11 +421,7 @@ Widget _buildDottedBoxCenter({
       Text(
         bottomTitle,
         textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: AppColors.white,
-          fontSize: 14,
-          fontWeight: FontWeight.bold,
-        ),
+        style: TextStyles.size14WeightboldvisbycfBold,
       ),
       const SizedBox(height: 20),
     ],
@@ -609,21 +522,11 @@ Widget _buildTechnologyStack() {
             children: [
               TextSpan(
                 text: 'Our\n',
-                style: TextStyle(
-                  fontSize: 55,
-                  fontWeight: FontWeight.normal,
-                  color: AppColors.blackish,
-                  fontFamily: 'visbycf-medium',
-                ),
+                style: TextStyles.size55visbycfmediumblackish,
               ),
               TextSpan(
                 text: 'Technology\nStack',
-                style: TextStyle(
-                  fontSize: 55,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.blackish,
-                  fontFamily: 'visbycf-medium',
-                ),
+                style: TextStyles.size55Weightboldvisbycfmediumblackish,
               ),
             ],
           ),
@@ -696,12 +599,7 @@ Widget _buildStackCategory(String title, List<String> icons) {
             ),
             Text(
               title,
-              style: const TextStyle(
-                color: AppColors.blackish,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'visbycf-medium',
-              ),
+              style: TextStyles.size20Weightboldvisbycfmediumblackish,
             ),
           ],
         ),
@@ -730,35 +628,14 @@ Widget _buildWhyArchmageSection() {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text(
-              'Why',
-              style: TextStyle(
-                fontSize: 55,
-                fontWeight: FontWeight.normal,
-                color: Colors.white,
-                fontFamily: 'visbycf-medium',
-              ),
-            ),
+            Text('Why', style: TextStyles.size55visbycfmedium),
             SizedBox(height: 4),
-            Text(
-              'Archmage?',
-              style: TextStyle(
-                fontSize: 55,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontFamily: 'visbycf-medium',
-              ),
-            ),
+            Text('Archmage?', style: TextStyles.size55Weightboldvisbycfmedium),
             SizedBox(height: 16),
             Text(
               'Clients hire Archmage for its technical ability and scalable structure '
               'but continue to retain because project relationships turn into trusted partnerships.',
-              style: TextStyle(
-                fontSize: 16,
-                height: 1.5,
-                color: AppColors.white,
-                fontFamily: 'visbycf-medium',
-              ),
+              style: TextStyles.size15visbycfmediumwhite,
             ),
           ],
         ),
@@ -823,13 +700,7 @@ Widget _whyArchmageGridItem({
       Text(
         label,
         textAlign: TextAlign.center,
-        style: const TextStyle(
-          fontSize: 16,
-          color: AppColors.white,
-          fontWeight: FontWeight.bold,
-          height: 1.15,
-          fontFamily: 'visbycf-medium',
-        ),
+        style: TextStyles.size15visbycfmediumwhite,
       ),
     ],
   );
@@ -847,22 +718,10 @@ Widget _buildTeamSection() {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text(
-              'The',
-              style: TextStyle(
-                fontSize: 55,
-                color: AppColors.black,
-                fontFamily: 'visbycf-medium',
-              ),
-            ),
+            Text('The', style: TextStyles.size55visbycfmediumblackish),
             Text(
               'Team',
-              style: TextStyle(
-                fontSize: 55,
-                fontWeight: FontWeight.bold,
-                color: AppColors.black,
-                fontFamily: 'visbycf-medium',
-              ),
+              style: TextStyles.size55Weightboldvisbycfmediumblackish,
             ),
           ],
         ),
@@ -984,11 +843,7 @@ Widget _buildTeamLeader({
         ),
         Text(
           role,
-          style: const TextStyle(
-            fontSize: 14,
-            color: Colors.grey,
-            fontFamily: 'visbycf-medium',
-          ),
+          style: TextStyles.size14visbycfmediumgrey,
           textAlign: TextAlign.center,
         ),
         if (linkedIn)
