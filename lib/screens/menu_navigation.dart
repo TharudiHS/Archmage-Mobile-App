@@ -3,8 +3,9 @@ import 'package:archmage_app/screens/archlabs.dart';
 import 'package:archmage_app/screens/blog_page.dart';
 import 'package:archmage_app/screens/career.dart';
 import 'package:archmage_app/screens/contact_page.dart';
-import 'package:flutter/material.dart';
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
+import 'package:flutter/material.dart';
 import 'login_page.dart';
 
 class MenuNavigation extends StatelessWidget {
@@ -145,11 +146,7 @@ class MenuNavigation extends StatelessWidget {
                     ),
                     child: Text(
                       isLoggedIn ? 'Logout' : 'Login',
-                      style: const TextStyle(
-                        color: AppColors.red,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: TextStyles.size18WeightboldvisbycfBold,
                     ),
                   ),
                 ),
@@ -178,6 +175,7 @@ class MenuNavigation extends StatelessWidget {
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
+              fontFamily: 'visbycf-bold',
               color: isActive ? AppColors.pinkish : AppColors.white,
             ),
           ),
@@ -212,11 +210,7 @@ class MenuNavigation extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: 'Career ',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.white,
-                    ),
+                    style: TextStyles.size22WeightboldvisbycfBold,
                   ),
                   WidgetSpan(
                     child: Padding(
@@ -230,11 +224,7 @@ class MenuNavigation extends StatelessWidget {
                   ),
                   TextSpan(
                     text: 'Switch',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.white,
-                    ),
+                    style: TextStyles.size22WeightboldvisbycfBold,
                   ),
                 ],
               ),
