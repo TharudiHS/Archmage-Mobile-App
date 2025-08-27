@@ -1,7 +1,7 @@
-import 'package:archmage_app/screens/archlabs_labs.dart';
-import 'package:flutter/material.dart';
-import 'package:archmage_app/components/asset_paths.dart';
+import 'package:archmage_app/screens/archlabs.dart';
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
+import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback onLoginSuccess;
@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                       // Centered logo
                       Center(
                         child: Image.asset(
-                          AssetPaths.am3,
+                          'assets/images/am3.png',
                           height: 100,
                           fit: BoxFit.contain,
                         ),
@@ -56,12 +56,7 @@ class _LoginPageState extends State<LoginPage> {
 
                       const Text(
                         'Partner/ Client Login',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black87,
-                          fontFamily: 'visbycf-regular',
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyles.size18Weightboldvisbycfregular,
                       ),
 
                       const SizedBox(height: 30),
@@ -78,9 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                           controller: usernameController,
                           decoration: const InputDecoration(
                             hintText: 'User Name',
-                            hintStyle: TextStyle(
-                              color: Colors.grey,
-                            ), // <-- light gray hint
+                            hintStyle: TextStyle(color: Colors.grey),
                             border: InputBorder.none,
                           ),
                         ),
@@ -88,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
 
                       const SizedBox(height: 36),
 
-                      //Password box inside a container
+                      //Password box
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 12),
                         decoration: BoxDecoration(
@@ -101,9 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                           obscureText: true,
                           decoration: InputDecoration(
                             hintText: 'Password',
-                            hintStyle: TextStyle(
-                              color: AppColors.mediumGray,
-                            ), // <-- light gray hint
+                            hintStyle: TextStyle(color: AppColors.mediumGray),
                             border: InputBorder.none,
                           ),
                         ),
@@ -136,11 +127,7 @@ class _LoginPageState extends State<LoginPage> {
                             onPressed: () {},
                             child: const Text(
                               'Forgot your password?',
-                              style: TextStyle(
-                                color: AppColors.darkRed,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'visbycf-regular',
-                              ),
+                              style: TextStyles.size13Weightboldvisbycfregular,
                             ),
                           ),
                         ],
@@ -170,11 +157,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           child: const Text(
                             'Login',
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: TextStyles.size18WeightboldvisbycfBoldwhite,
                           ),
                         ),
                       ),
