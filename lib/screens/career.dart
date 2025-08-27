@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:archmage_app/components/app_bar.dart';
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
+import 'package:flutter/material.dart';
 
 class CareerPage extends StatefulWidget {
   const CareerPage({super.key});
@@ -45,29 +46,19 @@ class _CareerPageState extends State<CareerPage> {
                   children: const [
                     Text(
                       "Switch your\ncareer to IT",
-                      style: TextStyle(
-                        fontSize: 45,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.white,
-                        height: 1.3,
-                      ),
+                      style: TextStyles.size45WeightboldvisbycfBoldwhite,
                     ),
                     SizedBox(height: 15),
                     Text(
                       "Our online traineeship provides you with the right courses, practical work and industry training to start \na new career in IT.",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                        height: 1.4,
-                        fontFamily: 'visbycf-medium',
-                      ),
+                      style: TextStyles.size15visbycfmediumwhite,
                     ),
                   ],
                 ),
               ),
               const SizedBox(height: 25),
 
-              // Kick Off Section (center aligned)
+              // Kick Off Section
               _buildCenteredSection(
                 icon: Icons.rocket_launch,
                 titleBold: 'Kick off',
@@ -104,20 +95,16 @@ class _CareerPageState extends State<CareerPage> {
                 ),
                 child: Column(
                   children: [
-                    // "Our Traineeships" centered text
+                    // Our Traineeships Text
                     RichText(
                       textAlign: TextAlign.center,
                       text: const TextSpan(
                         text: 'Our ',
-                        style: TextStyle(fontSize: 25, color: AppColors.black),
+                        style: TextStyles.size25visbycfBold,
                         children: [
                           TextSpan(
                             text: 'Traineeships',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: AppColors.black,
-                              fontSize: 25,
-                            ),
+                            style: TextStyles.size25WeightboldvisbycfBoldblack,
                           ),
                         ],
                       ),
@@ -139,21 +126,13 @@ class _CareerPageState extends State<CareerPage> {
                           ),
                           child: const Text(
                             'Web Development',
-                            style: TextStyle(
-                              color: AppColors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: TextStyles.size15WeightboldvisbycfBold,
                           ),
                         ),
                         const SizedBox(width: 8),
                         const Text(
                           'Mobile Development',
-                          style: TextStyle(
-                            color: AppColors.black,
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyles.size15WeightboldvisbycfBoldblack,
                         ),
                       ],
                     ),
@@ -239,21 +218,11 @@ class _CareerPageState extends State<CareerPage> {
             Text.rich(
               TextSpan(
                 text: titleBold,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.black,
-                  fontSize: 30,
-                  fontFamily: 'visbycf-regular',
-                ),
+                style: TextStyles.size30Weightboldvisbycfregular,
                 children: [
                   TextSpan(
                     text: titleRest,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.normal,
-                      color: AppColors.black,
-                      fontFamily: 'visbycf-regular',
-                      fontSize: 30,
-                    ),
+                    style: TextStyles.size30visbycfregular,
                   ),
                 ],
               ),
@@ -265,11 +234,7 @@ class _CareerPageState extends State<CareerPage> {
               child: Text(
                 description,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 18,
-                  color: AppColors.gray,
-                  height: 1.4,
-                ),
+                style: TextStyles.size18visbycfmedium,
               ),
             ),
           ],
@@ -289,12 +254,12 @@ class _CareerPageState extends State<CareerPage> {
             children: [
               RichText(
                 text: const TextSpan(
-                  style: TextStyle(fontSize: 25, color: AppColors.black),
+                  style: TextStyles.size25visbycfBold,
                   children: [
                     TextSpan(text: 'Partner '),
                     TextSpan(
                       text: 'Companies',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyles.size25WeightboldvisbycfBoldblack,
                     ),
                   ],
                 ),
@@ -323,12 +288,12 @@ class _CareerPageState extends State<CareerPage> {
             children: [
               RichText(
                 text: const TextSpan(
-                  style: TextStyle(fontSize: 25, color: AppColors.black),
+                  style: TextStyles.size25visbycfBold,
                   children: [
                     TextSpan(text: 'Success '),
                     TextSpan(
                       text: 'Stories',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyles.size25WeightboldvisbycfBoldblack,
                     ),
                   ],
                 ),
@@ -336,10 +301,7 @@ class _CareerPageState extends State<CareerPage> {
               const SizedBox(height: 8),
               const Text(
                 'Don’t just take our word for it. Hear more from our alumni!',
-                style: TextStyle(
-                  color: AppColors.gray92,
-                  fontFamily: 'visbycf-regular',
-                ),
+                style: TextStyles.size15visbycfregulargray92,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 50),
@@ -364,27 +326,17 @@ class _CareerPageState extends State<CareerPage> {
                       children: [
                         const Text(
                           'Manthindra Palliyaguru',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: AppColors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyles.size16WeightboldvisbycfBold,
                         ),
                         const Text(
                           'Ceylon Solutions',
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: AppColors.white,
-                          ),
+                          style: TextStyles.size13visbycfBold,
                         ),
                         const SizedBox(height: 12),
                         const Text(
                           'Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit.',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: AppColors.white,
-                          ),
+                          style: TextStyles.size15visbycfmedium,
                         ),
                         const SizedBox(height: 16),
                         Row(
@@ -394,18 +346,11 @@ class _CareerPageState extends State<CareerPage> {
                               children: [
                                 Text(
                                   'Job Before',
-                                  style: TextStyle(
-                                    color: AppColors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14,
-                                  ),
+                                  style: TextStyles.size14WeightboldvisbycfBold,
                                 ),
                                 Text(
                                   'Junior Project\nManager',
-                                  style: TextStyle(
-                                    color: AppColors.white,
-                                    fontSize: 14,
-                                  ),
+                                  style: TextStyles.size14visbycfBold,
                                   textAlign: TextAlign.center,
                                 ),
                               ],
@@ -421,18 +366,11 @@ class _CareerPageState extends State<CareerPage> {
                               children: [
                                 Text(
                                   'Job After',
-                                  style: TextStyle(
-                                    color: AppColors.white,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  style: TextStyles.size14WeightboldvisbycfBold,
                                 ),
                                 Text(
                                   'Senior Project\nManager',
-                                  style: TextStyle(
-                                    color: AppColors.white,
-                                    fontSize: 14,
-                                  ),
+                                  style: TextStyles.size14visbycfBold,
                                   textAlign: TextAlign.center,
                                 ),
                               ],
@@ -482,18 +420,14 @@ class _CareerPageState extends State<CareerPage> {
             children: [
               const Text(
                 'Have any questions?',
-                style: TextStyle(
-                  color: AppColors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 19,
-                ),
+                style: TextStyles.size19WeightboldvisbycfBold,
               ),
               const SizedBox(height: 8),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 24),
                 child: Text(
                   'Speak to our team. We are here to help you \nfind the right program.',
-                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                  style: TextStyles.size15visbycfmedium,
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -505,23 +439,14 @@ class _CareerPageState extends State<CareerPage> {
                   SizedBox(width: 10),
                   Text(
                     '+94 77 290 7480',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: AppColors.white,
-                      fontFamily: 'visbycf-regular',
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyles.size20Weightboldvisbycfregular,
                   ),
                 ],
               ),
               const SizedBox(height: 6),
               const Text(
                 'We are available Monday - Friday\n9am to 7pm SL hours',
-                style: TextStyle(
-                  color: Colors.white54,
-                  fontSize: 13,
-                  fontFamily: 'visbycf-regular',
-                ),
+                style: TextStyles.size13visbycfmedium,
                 textAlign: TextAlign.center,
               ),
             ],
@@ -569,11 +494,7 @@ class _CareerPageState extends State<CareerPage> {
               const Center(
                 child: Text(
                   'Join the program',
-                  style: TextStyle(
-                    color: AppColors.white,
-                    fontSize: 20,
-                    fontFamily: 'visbycf-bold',
-                  ),
+                  style: TextStyles.size20visbycfdemibold,
                 ),
               ),
               const SizedBox(height: 20),
@@ -589,18 +510,13 @@ class _CareerPageState extends State<CareerPage> {
               const Center(
                 child: Text(
                   'LKR 25,000',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: AppColors.white,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'visbycf-medium',
-                  ),
+                  style: TextStyles.size25WeightboldvisbycfBoldwhite,
                 ),
               ),
               const Center(
                 child: Text(
                   'per month',
-                  style: TextStyle(color: AppColors.white),
+                  style: TextStyles.size16visbycfregular,
                 ),
               ),
               const SizedBox(height: 20),
@@ -620,7 +536,7 @@ class _CareerPageState extends State<CareerPage> {
                   onPressed: () {},
                   child: const Text(
                     'Book a Call',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    style: TextStyles.size15WeightboldvisbycfBoldred,
                   ),
                 ),
               ),
@@ -647,14 +563,7 @@ class _CheckItem extends StatelessWidget {
           const Icon(Icons.check, color: AppColors.white, size: 18),
           const SizedBox(width: 8),
           Expanded(
-            child: Text(
-              text,
-              style: const TextStyle(
-                color: AppColors.white,
-                fontSize: 16,
-                fontFamily: 'visbycf-medium',
-              ),
-            ),
+            child: Text(text, style: TextStyles.size16visbycfmediumwhite),
           ),
         ],
       ),
@@ -679,11 +588,7 @@ extension on _CareerPageState {
               Expanded(
                 child: RichText(
                   text: TextSpan(
-                    style: const TextStyle(
-                      fontSize: 28,
-                      color: AppColors.black,
-                      fontFamily: 'visbycf-regular',
-                    ),
+                    style: TextStyles.size28visbycfregular,
                     children: _buildTitleSpans(title),
                   ),
                 ),
@@ -696,7 +601,7 @@ extension on _CareerPageState {
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
                 description,
-                style: const TextStyle(fontSize: 15, color: AppColors.gray),
+                style: TextStyles.size15visbycfregulargray,
               ),
             ),
         ],
