@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:flutter/material.dart';
+import 'package:archmage_app/utils/text_styles.dart';
 import 'menu_navigation.dart';
 
 class ArchmageHomePage extends StatefulWidget {
@@ -49,22 +50,14 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   Text(
-                    'Delivering\nmarket leading\ndigital solutions',
-                    style: TextStyle(
-                      fontSize: 45,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.blackish,
-                      height: 1.3,
-                    ),
+                    'Delivering\nmarket - leading\ndigital solutions',
+                    style: TextStyles.size45WeightboldvisbycfBold,
                   ),
+
                   SizedBox(height: 12),
                   Text(
                     'We specialize in developing \ninnovative turn key solutions that \ndrive results.',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: AppColors.blackish,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyles.size20Weightboldvisbycfmedium,
                   ),
                 ],
               ),
@@ -144,12 +137,7 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                   children: [
                     const Text(
                       'Brands we have\ndigitally transformed',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.blackish,
-                        height: 1.3,
-                      ),
+                      style: TextStyles.size32WeightboldvisbycfBold,
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 20),
@@ -177,7 +165,7 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                       ),
                       child: const Text(
                         'View Portfolio',
-                        style: TextStyle(color: AppColors.white, fontSize: 16),
+                        style: TextStyles.size16WeightboldvisbycfBold,
                       ),
                     ),
                     SizedBox(height: 90),
@@ -185,18 +173,13 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                       children: [
                         const Text(
                           'Get in touch',
-                          style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.blackish,
-                            height: 1.3,
-                          ),
+                          style: TextStyles.size25WeightboldvisbycfBold,
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: 8),
                         const Text(
                           'Contact us for a quote, We are\nhappy to help you.',
-                          style: TextStyle(fontSize: 16, color: AppColors.gray),
+                          style: TextStyles.size16visbycfmedium,
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: 24),
@@ -220,12 +203,8 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                                   SizedBox(height: 8),
                                   Text(
                                     '+94 112 802 471',
-                                    style: TextStyle(
-                                      color: AppColors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11,
-                                      fontFamily: 'visbycf-medium',
-                                    ),
+                                    style: TextStyles
+                                        .size11Weightboldvisbycfmedium,
                                   ),
                                 ],
                               ),
@@ -248,12 +227,8 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                                   const SizedBox(height: 8),
                                   Text(
                                     'contact@archmage.lk',
-                                    style: TextStyle(
-                                      color: AppColors.gray,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 11,
-                                      fontFamily: 'visbycf-medium',
-                                    ),
+                                    style: TextStyles
+                                        .size11Weightboldvisbycfmediumgray,
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
@@ -280,20 +255,9 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
         children: [
           const TextSpan(
             text: 'arch',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 25,
-              color: Colors.black,
-            ),
+            style: TextStyles.size25WeightboldvisbycfBoldblack,
           ),
-          TextSpan(
-            text: rest,
-            style: const TextStyle(
-              fontWeight: FontWeight.normal,
-              fontSize: 25,
-              color: Colors.black,
-            ),
-          ),
+          TextSpan(text: rest, style: TextStyles.size25visbycfBold),
         ],
       ),
     );
@@ -326,7 +290,7 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
               SizedBox(height: 8),
               Text(
                 content,
-                style: TextStyle(color: AppColors.gray, fontSize: 15),
+                style: TextStyles.size15Weightboldvisbycfmediumgray,
               ),
             ],
           ],
@@ -354,31 +318,16 @@ class _StatBlock extends StatelessWidget {
         RichText(
           text: TextSpan(
             children: [
-              TextSpan(
-                text: number,
-                style: TextStyle(
-                  color: AppColors.white,
-                  fontSize: 40,
-                  fontFamily:
-                      'VisbyCF-Medium', // Optional if you want to match design
-                ),
-              ),
+              TextSpan(text: number, style: TextStyles.size40visbycfmedium),
               if (showPlusSign)
-                TextSpan(
-                  text: ' +',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontFamily: 'visbycf-medium', // fallback that shows '+'
-                    color: AppColors.white,
-                  ),
-                ),
+                TextSpan(text: ' +', style: TextStyles.size40visbycfmedium),
             ],
           ),
         ),
         SizedBox(height: 5),
         Text(
           label,
-          style: TextStyle(color: AppColors.white, fontSize: 13),
+          style: TextStyles.size13visbycfregular,
           textAlign: TextAlign.center,
         ),
       ],
