@@ -1,11 +1,11 @@
-import 'package:archmage_app/modules/about_page.dart';
-import 'package:archmage_app/modules/archlabs_labs.dart';
-import 'package:archmage_app/modules/career.dart';
-import 'package:archmage_app/modules/blog_page.dart';
-import 'package:archmage_app/modules/contact_page.dart';
+import 'package:archmage_app/screens/about_page.dart';
+import 'package:archmage_app/screens/archlabs_labs.dart';
+import 'package:archmage_app/screens/blog_page.dart';
+import 'package:archmage_app/screens/career.dart';
+import 'package:archmage_app/screens/contact_page.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/asset_paths.dart';
-import '../../core/theme/app_colors.dart';
+import 'package:archmage_app/components/asset_paths.dart';
+import 'package:archmage_app/utils/app_colors.dart';
 import 'login_page.dart';
 
 class MenuNavigation extends StatelessWidget {

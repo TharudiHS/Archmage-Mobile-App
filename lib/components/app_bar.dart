@@ -1,7 +1,7 @@
+import 'package:archmage_app/screens/menu_navigation.dart';
+import 'package:archmage_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'asset_paths.dart';
-import 'package:archmage_app/modules/menu_navigation.dart';
-import '../../core/theme/app_colors.dart';
 
 PreferredSizeWidget buildAppBar(BuildContext context) {
   return AppBar(

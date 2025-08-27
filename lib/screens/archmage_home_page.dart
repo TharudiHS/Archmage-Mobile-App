@@ -1,6 +1,6 @@
+import 'package:archmage_app/components/asset_paths.dart';
+import 'package:archmage_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import '../../core/theme/app_colors.dart';
-import '../../core/constants/asset_paths.dart';
 import 'menu_navigation.dart';
 
 class ArchmageHomePage extends StatefulWidget {

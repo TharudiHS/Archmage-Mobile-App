@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:archmage_app/core/constants/app_bar.dart';
-import '../../core/theme/app_colors.dart';
+import 'package:archmage_app/components/app_bar.dart';
+
+import 'package:archmage_app/utils/app_colors.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});

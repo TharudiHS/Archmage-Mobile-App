@@ -1,8 +1,8 @@
 import 'dart:math' as math;
+import 'package:archmage_app/components/app_bar.dart';
+import 'package:archmage_app/components/asset_paths.dart';
+import 'package:archmage_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:archmage_app/core/constants/app_bar.dart';
-import '../../core/constants/asset_paths.dart';
-import '../../core/theme/app_colors.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});

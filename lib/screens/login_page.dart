@@ -1,7 +1,7 @@
-import 'package:archmage_app/modules/archlabs_labs.dart';
+import 'package:archmage_app/screens/archlabs_labs.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/asset_paths.dart';
-import '../../core/theme/app_colors.dart';
+import 'package:archmage_app/components/asset_paths.dart';
+import 'package:archmage_app/utils/app_colors.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback onLoginSuccess;
