@@ -1,6 +1,5 @@
 import 'dart:math' as math;
 import 'package:archmage_app/components/app_bar.dart';
-import 'package:archmage_app/components/asset_paths.dart';
 import 'package:archmage_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -97,7 +96,10 @@ class AboutPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 20),
-                  Image.asset(AssetPaths.illustration, fit: BoxFit.contain),
+                  Image.asset(
+                    'assets/images/illustration.png',
+                    fit: BoxFit.contain,
+                  ),
                   const SizedBox(height: 20),
                   const Text(
                     '''Archmage Solutions (Pvt) Ltd is a Sri Lankan based leading product innovation house, established in 2005 as Archmage (Pvt) Ltd. We are a team of passionate creatives, developers and marketers offering end-to-end IT solutions, strategic technology consulting and product development services in Web, Mobile, Social, and Analytics. The company started off as a free-lancing software solution provider built upon the shoulders of a team of five passionate and aspiring Sri Lankan entrepreneurs.
@@ -128,37 +130,37 @@ Archmage's specialty is tailor-made solutions for how you work, sell, and grow. 
 
             _buildTimelineItem(
               year: '2005',
-              imagePath: AssetPaths.img2005,
+              imagePath: 'assets/images/2005.png',
               description:
                   'Archmage was launched by 5 university friends. \nThey wanted to bring value to society using the \nthings they loved: business and software \ntechnology.',
             ),
             _buildTimelineItem(
               year: '2009',
-              imagePath: AssetPaths.img2009,
+              imagePath: 'assets/images/2009.png',
               description:
                   'Archmage established its first corporate office and \ncontinued to grow and build a team.',
             ),
             _buildTimelineItem(
               year: '2012',
-              imagePath: AssetPaths.img2012,
+              imagePath: 'assets/images/2012.png',
               description:
                   'A pioneer product Theater Solution was launched. \nStarting from 2012 Archmage puts more focus on \ncinema solutions and the company keeps \nrefreshing its solution portfolio with the product for \nlocal cinema market. Now the product is used by \n7 theater chains across the country.',
             ),
             _buildTimelineItem(
               year: '2013',
-              imagePath: AssetPaths.img2013,
+              imagePath: 'assets/images/2013.png',
               description:
                   'Archmage partnered with Datafields Ltd a \nPortugal based technology company specialized \nin data solutions.',
             ),
             _buildTimelineItem(
               year: '2015',
-              imagePath: AssetPaths.img2015,
+              imagePath: 'assets/images/2015.png',
               description:
                   'The name of the company was changed from \nArchmage (Pvt) Ltd to Archmage Solutions (Pvt) \nLtd. \n\nThe company received series A funding from R.W. \nHoldings.',
             ),
             _buildTimelineItem(
               year: '2016',
-              imagePath: AssetPaths.img2016,
+              imagePath: 'assets/images/2016.png',
               description:
                   'Archmage entered Healthcare sector and \npartnered with Ruhunu Hospital (Pvt) Ltd to \nestablish a new office in Galle.'
                   ' \n\nArchmage set up Mobile Development stream to \nfollow market needs and started partnership with \nCardiff App Developers in UK to provide mobile \napplication solutions. As for now, we have solid \nmobile (iOS, Android) experience; more than 150 \nprojects done',
@@ -629,49 +631,49 @@ Widget _buildTechnologyStack() {
         const SizedBox(height: 35),
 
         _buildStackCategory('Project Management', [
-          AssetPaths.jira,
-          AssetPaths.asana,
+          'assets/images/jira.png',
+          'assets/images/asana.png',
         ]),
         _buildStackCategory('UI/UX Tools', [
-          AssetPaths.axure,
-          AssetPaths.figma,
-          AssetPaths.miro,
-          AssetPaths.ps,
-          AssetPaths.xd,
+          'assets/images/axure.png',
+          'assets/images/figma.png',
+          'assets/images/miro.png',
+          'assets/images/ps.png',
+          'assets/images/xd.png',
         ]),
         _buildStackCategory('Frontend Development', [
-          AssetPaths.html,
-          AssetPaths.css,
-          AssetPaths.bootstrap,
-          AssetPaths.react,
-          AssetPaths.js,
-          AssetPaths.angularjs,
-          AssetPaths.vue,
-          AssetPaths.meteor,
+          'assets/images/html.png',
+          'assets/images/css.png',
+          'assets/images/bootstrap.png',
+          'assets/images/react.png',
+          'assets/images/js.png',
+          'assets/images/angularjs.png',
+          'assets/images/vue.png',
+          'assets/images/meteor.png',
         ]),
         _buildStackCategory('Backend Development', [
-          AssetPaths.java,
-          AssetPaths.php,
-          AssetPaths.node,
-          AssetPaths.python,
+          'assets/images/java.png',
+          'assets/images/php.png',
+          'assets/images/node.png',
+          'assets/images/python.png',
         ]),
         _buildStackCategory('Mobile App Development', [
-          AssetPaths.swift,
-          AssetPaths.flutter,
-          AssetPaths.kotlin,
-          AssetPaths.reactnative,
+          'assets/images/swift.png',
+          'assets/images/flutter.png',
+          'assets/images/kotlin.png',
+          'assets/images/reactnative.png',
         ]),
         _buildStackCategory('Databases', [
-          AssetPaths.mysql,
-          AssetPaths.oracle,
-          AssetPaths.sqlserver,
-          AssetPaths.mongodb,
+          'assets/images/mysql.png',
+          'assets/images/oracle.png',
+          'assets/images/sqlserver.png',
+          'assets/images/mongodb.png',
         ]),
         _buildStackCategory('Servers', [
-          AssetPaths.aws,
-          AssetPaths.azure,
-          AssetPaths.cloud,
-          AssetPaths.digitalocean,
+          'assets/images/aws.png',
+          'assets/images/azure.png',
+          'assets/images/cloud.png',
+          'assets/images/digitalocean.png',
         ]),
       ],
     ),
@@ -776,27 +778,27 @@ Widget _buildWhyArchmageSection() {
           childAspectRatio: 0.95,
           children: [
             _whyArchmageGridItem(
-              imagePath: AssetPaths.clientfocused,
+              imagePath: 'assets/images/clientfocused.png',
               label: 'Client focused',
             ),
             _whyArchmageGridItem(
-              imagePath: AssetPaths.domainexperts,
+              imagePath: 'assets/images/domainexperts.png',
               label: 'Domain experts',
             ),
             _whyArchmageGridItem(
-              imagePath: AssetPaths.reliablefast,
+              imagePath: 'assets/images/reliablefast.png',
               label: 'Reliable & Fast Delivery',
             ),
             _whyArchmageGridItem(
-              imagePath: AssetPaths.flexible,
+              imagePath: 'assets/images/flexible.png',
               label: 'Flexible',
             ),
             _whyArchmageGridItem(
-              imagePath: AssetPaths.engineeringquality,
+              imagePath: 'assets/images/engineeringquality.png',
               label: 'Engineering Quality',
             ),
             _whyArchmageGridItem(
-              imagePath: AssetPaths.committed,
+              imagePath: 'assets/images/committed.png',
               label: 'Committed',
             ),
           ],
@@ -868,21 +870,21 @@ Widget _buildTeamSection() {
 
         // Leaders
         _buildTeamLeader(
-          imagePath: AssetPaths.nirosha,
+          imagePath: 'assets/images/nirosha.png',
           name: 'Nirosha Kodituwakku',
           role: 'CEO, Co-Founder',
           linkedIn: true,
         ),
         const SizedBox(height: 40),
         _buildTeamLeader(
-          imagePath: AssetPaths.raveen,
+          imagePath: 'assets/images/raveen.png',
           name: 'Raveen Wickramasinghe',
           role: 'Co-Founder',
           linkedIn: true,
         ),
         const SizedBox(height: 40),
         _buildTeamLeader(
-          imagePath: AssetPaths.janith,
+          imagePath: 'assets/images/janith.png',
           name: 'Janith Liyanage',
           role: 'Co-Founder',
           linkedIn: true,
@@ -907,37 +909,37 @@ Widget _buildTeamSection() {
             _buildSmallTeamMember(
               name: 'Kanchani',
               role: 'Project Manager',
-              imagePath: AssetPaths.kanchani,
+              imagePath: 'assets/images/kanchani.png',
             ),
             _buildSmallTeamMember(
               name: 'Vishwa',
               role: 'Business Analyst',
-              imagePath: AssetPaths.vishwa,
+              imagePath: 'assets/images/vishwa.png',
             ),
             _buildSmallTeamMember(
               name: 'Prabath',
               role: 'UI/UX Engineer',
-              imagePath: AssetPaths.prabath,
+              imagePath: 'assets/images/prabath.png',
             ),
             _buildSmallTeamMember(
               name: 'Malith',
               role: 'UI/UX Engineer',
-              imagePath: AssetPaths.malith,
+              imagePath: 'assets/images/malith.png',
             ),
             _buildSmallTeamMember(
               name: 'Chanidu',
               role: 'Software Engineer',
-              imagePath: AssetPaths.chanidu,
+              imagePath: 'assets/images/chanidu.png',
             ),
             _buildSmallTeamMember(
               name: 'Dilshan',
               role: 'Software Engineer',
-              imagePath: AssetPaths.dilshan,
+              imagePath: 'assets/images/dilshan.png',
             ),
             _buildSmallTeamMember(
               name: 'You?',
               role: 'Join Archmage',
-              imagePath: AssetPaths.you,
+              imagePath: 'assets/images/you.png',
               isJoinArchmage: true,
             ),
           ],
@@ -993,7 +995,7 @@ Widget _buildTeamLeader({
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: Image.asset(
-              AssetPaths.linkedin,
+              'assets/images/linkedin.png',
               width: 28,
               height: 28,
               fit: BoxFit.contain,
@@ -1042,7 +1044,7 @@ Widget _buildSmallTeamMember({
               )
             : Center(
                 child: Image.asset(
-                  AssetPaths.you,
+                  'assets/images/you.png',
                   width: 60,
                   height: 60,
                   fit: BoxFit.contain,
