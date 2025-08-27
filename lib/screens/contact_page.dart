@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:archmage_app/components/app_bar.dart';
-
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
+import 'package:flutter/material.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
@@ -34,21 +34,12 @@ class ContactPage extends StatelessWidget {
                         children: [
                           Text(
                             'Contact Us',
-                            style: TextStyle(
-                              fontSize: 55,
-                              height: 66 / 55,
-                              fontWeight: FontWeight.w800,
-                              color: AppColors.white,
-                            ),
+                            style: TextStyles.size55WeightboldvisbycfBold,
                           ),
                           const SizedBox(height: 20),
                           RichText(
                             text: TextSpan(
-                              style: TextStyle(
-                                fontSize: 16,
-                                height: 22 / 16,
-                                color: AppColors.white,
-                              ),
+                              style: TextStyles.size16visbycfBold,
                               children: [
                                 const TextSpan(
                                   text:
@@ -56,10 +47,7 @@ class ContactPage extends StatelessWidget {
                                 ),
                                 TextSpan(
                                   text: 'Let us know.',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: AppColors.white,
-                                  ),
+                                  style: TextStyles.size16WeightboldvisbycfBold,
                                 ),
                               ],
                             ),
@@ -115,12 +103,7 @@ class ContactPage extends StatelessWidget {
                               Expanded(
                                 child: RichText(
                                   text: TextSpan(
-                                    style: const TextStyle(
-                                      fontSize: 14,
-                                      height: 22 / 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: AppColors.black,
-                                    ),
+                                    style: TextStyles.size14visbycfmediumBlack,
                                     children: [
                                       const TextSpan(
                                         text:
@@ -128,10 +111,8 @@ class ContactPage extends StatelessWidget {
                                       ),
                                       TextSpan(
                                         text: 'privacy statement.',
-                                        style: TextStyle(
-                                          color: AppColors.red,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                        style:
+                                            TextStyles.size14visbycfmediumred,
                                       ),
                                     ],
                                   ),
@@ -161,11 +142,7 @@ class ContactPage extends StatelessWidget {
                               alignment: Alignment.center,
                               child: const Text(
                                 'Send',
-                                style: TextStyle(
-                                  color: AppColors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
+                                style: TextStyles.size16WeightboldvisbycfBold,
                               ),
                             ),
                           ),
@@ -190,19 +167,13 @@ class ContactPage extends StatelessWidget {
                                 width: 140,
                                 child: RichText(
                                   text: TextSpan(
-                                    style: TextStyle(
-                                      color: AppColors.white,
-                                      fontFamily: 'visbycf-medium',
-                                      fontSize: 14,
-                                    ),
+                                    style: TextStyles.size14visbycfBold,
                                     children: const [
                                       TextSpan(text: "Don't like\n"),
                                       TextSpan(
                                         text: 'forms?',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'visbycf-medium',
-                                        ),
+                                        style: TextStyles
+                                            .size14WeightboldvisbycfBold,
                                       ),
                                     ],
                                   ),
@@ -230,20 +201,14 @@ class ContactPage extends StatelessWidget {
                                           children: [
                                             Text(
                                               '+94 77 290 7480',
-                                              style: TextStyle(
-                                                color: AppColors.white,
-                                                fontSize: 14,
-                                                fontFamily: 'visbycf-medium',
-                                              ),
+                                              style:
+                                                  TextStyles.size14visbycfBold,
                                             ),
                                             const SizedBox(height: 4),
                                             Text(
                                               '+94 11 280 2471',
-                                              style: TextStyle(
-                                                color: AppColors.white,
-                                                fontSize: 14,
-                                                fontFamily: 'visbycf-medium',
-                                              ),
+                                              style:
+                                                  TextStyles.size14visbycfBold,
                                             ),
                                           ],
                                         ),
@@ -263,11 +228,7 @@ class ContactPage extends StatelessWidget {
                                         const SizedBox(width: 6),
                                         Text(
                                           'contact@archmage.lk',
-                                          style: TextStyle(
-                                            color: AppColors.white,
-                                            fontSize: 14,
-                                            fontFamily: 'visbycf-medium',
-                                          ),
+                                          style: TextStyles.size14visbycfBold,
                                         ),
                                       ],
                                     ),
@@ -292,18 +253,13 @@ class ContactPage extends StatelessWidget {
                                 width: 140,
                                 child: RichText(
                                   text: TextSpan(
-                                    style: TextStyle(
-                                      color: AppColors.white,
-                                      fontFamily: 'visbycf-medium',
-                                      fontSize: 14,
-                                    ),
+                                    style: TextStyles.size14visbycfBold,
                                     children: const [
                                       TextSpan(text: 'Where to\n'),
                                       TextSpan(
                                         text: 'find us',
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                        style: TextStyles
+                                            .size14WeightboldvisbycfBold,
                                       ),
                                     ],
                                   ),
@@ -323,11 +279,7 @@ class ContactPage extends StatelessWidget {
                                     Expanded(
                                       child: Text(
                                         '38A, Wijerama Lane,\nGangodawila,\nNugegoda,\nSri Lanka',
-                                        style: TextStyle(
-                                          color: AppColors.white,
-                                          fontFamily: 'visbycf-medium',
-                                          fontSize: 14,
-                                        ),
+                                        style: TextStyles.size14visbycfBold,
                                       ),
                                     ),
                                   ],
@@ -350,14 +302,7 @@ class ContactPage extends StatelessWidget {
 
   // Helper: Field label
   static Widget _buildLabel(String text) {
-    return Text(
-      text,
-      style: const TextStyle(
-        fontSize: 16,
-        fontFamily: 'visbycf-medium',
-        color: AppColors.black,
-      ),
-    );
+    return Text(text, style: TextStyles.size16visbycfmediumblack);
   }
 
   // Helper: Text field
@@ -396,7 +341,7 @@ class ContactPage extends StatelessWidget {
         child: DropdownButton<String>(
           isExpanded: true,
           hint: const Text("Google or other search engines"),
-          style: const TextStyle(fontSize: 13, fontFamily: 'visbycf-medium'),
+          style: TextStyles.size13visbycfmediumgray92,
           onChanged: (value) {},
           items: const [
             DropdownMenuItem(value: '1', child: Text('Option 1')),
