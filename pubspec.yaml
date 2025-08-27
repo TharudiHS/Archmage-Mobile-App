@@ -31,4 +31,5 @@ flutter:
         - asset: assets/fonts/visbycf-bold.otf
         - asset: assets/fonts/visbycf-regular.otf
         - asset: assets/fonts/visbycf-medium.otf
+        - asset: assets/fonts/visbycf-demibold.otf
 
