@@ -1,6 +1,5 @@
-import 'package:archmage_app/components/asset_paths.dart';
-import 'package:archmage_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:archmage_app/utils/app_colors.dart';
 import 'menu_navigation.dart';
 
 class ArchmageHomePage extends StatefulWidget {
@@ -21,7 +20,7 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
       appBar: AppBar(
         title: Row(
           children: [
-            Image.asset(AssetPaths.am, height: 24),
+            Image.asset('assets/images/am.png', height: 24),
             Spacer(),
             IconButton(
               icon: const Icon(Icons.menu),
@@ -42,7 +41,7 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Image.asset(AssetPaths.image1),
+              child: Image.asset('assets/images/image1.png'),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -157,10 +156,10 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Image.asset(AssetPaths.eap, height: 45),
-                        Image.asset(AssetPaths.dialog, height: 45),
-                        Image.asset(AssetPaths.mimt, height: 45),
-                        Image.asset(AssetPaths.scope, height: 45),
+                        Image.asset('assets/images/EAP.png', height: 45),
+                        Image.asset('assets/images/dialog.png', height: 45),
+                        Image.asset('assets/images/MIMT.png', height: 45),
+                        Image.asset('assets/images/scope.jpg', height: 45),
                       ],
                     ),
                     SizedBox(height: 24),
