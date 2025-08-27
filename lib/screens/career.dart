@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:archmage_app/components/app_bar.dart';
-import 'package:archmage_app/components/asset_paths.dart';
 import 'package:archmage_app/utils/app_colors.dart';
 
 class CareerPage extends StatefulWidget {
@@ -27,7 +26,7 @@ class _CareerPageState extends State<CareerPage> {
             children: [
               // Top image
               Image.asset(
-                AssetPaths.careerHeader,
+                'assets/images/careerHeader.png',
                 width: double.infinity,
                 height: 220,
                 fit: BoxFit.cover,
@@ -162,7 +161,7 @@ class _CareerPageState extends State<CareerPage> {
 
                     // Preview Image
                     Image.asset(
-                      AssetPaths.webPreview,
+                      'assets/images/webPreview.png',
                       fit: BoxFit.cover,
                       width: double.infinity,
                       height: 250,
@@ -304,9 +303,12 @@ class _CareerPageState extends State<CareerPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(AssetPaths.inivosLogo, height: 20),
+                  Image.asset('assets/images/inivos_logo.png', height: 20),
                   const SizedBox(width: 16),
-                  Image.asset(AssetPaths.ceylonSolutionsLogo, height: 17),
+                  Image.asset(
+                    'assets/images/ceylon_solutions_logo.png',
+                    height: 17,
+                  ),
                 ],
               ),
             ],
@@ -445,7 +447,7 @@ class _CareerPageState extends State<CareerPage> {
                     right: 100,
 
                     child: CircleAvatar(
-                      backgroundImage: AssetImage(AssetPaths.man),
+                      backgroundImage: AssetImage('assets/images/man.png'),
                       radius: 60,
                     ),
                   ),
