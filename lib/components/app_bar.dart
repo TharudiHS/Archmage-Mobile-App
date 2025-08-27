@@ -1,7 +1,6 @@
 import 'package:archmage_app/screens/menu_navigation.dart';
 import 'package:archmage_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'asset_paths.dart';
 
 PreferredSizeWidget buildAppBar(BuildContext context) {
   return AppBar(
@@ -9,7 +8,7 @@ PreferredSizeWidget buildAppBar(BuildContext context) {
     backgroundColor: AppColors.red,
     title: Row(
       children: [
-        Image.asset(AssetPaths.am, height: 24),
+        Image.asset('assets/images/am.png', height: 24),
         const Spacer(),
         IconButton(
           icon: const Icon(Icons.menu),
