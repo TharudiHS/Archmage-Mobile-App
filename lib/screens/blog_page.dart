@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:archmage_app/components/app_bar.dart';
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
+import 'package:flutter/material.dart';
 import 'dart:math';
 
 class BlogPage extends StatelessWidget {
@@ -31,20 +32,7 @@ class BlogPage extends StatelessWidget {
                   const Text(
                     "What's happening\nat archmage?",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'visbycf-bold',
-                      shadows: [
-                        // add shadow for text visibility
-                        Shadow(
-                          offset: Offset(0, 1),
-                          blurRadius: 4,
-                          color: Colors.black54,
-                        ),
-                      ],
-                    ),
+                    style: TextStyles.size40WeightboldvisbycfBold,
                   ),
                   const SizedBox(height: 10),
 
@@ -119,11 +107,7 @@ class BlogPage extends StatelessWidget {
                 children: const [
                   Text(
                     "More Articles",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14,
-                      color: AppColors.black,
-                    ),
+                    style: TextStyles.size14WeightboldvisbycfBoldblack,
                   ),
                   SizedBox(width: 5),
                   Icon(Icons.keyboard_arrow_down, color: AppColors.red),
@@ -157,23 +141,11 @@ class BlogPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Text(
-            title,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-              fontFamily: 'visbycf-bold',
-              color: AppColors.black,
-            ),
-          ),
+          Text(title, style: TextStyles.size18WeightboldvisbycfBoldblack),
           const SizedBox(height: 5),
           RichText(
             text: TextSpan(
-              style: const TextStyle(
-                color: AppColors.gray92,
-                fontSize: 15,
-                fontFamily: 'visbycf-bold',
-              ),
+              style: TextStyles.size15visbycfBold,
               children: [
                 TextSpan(text: "$description "),
                 const TextSpan(
