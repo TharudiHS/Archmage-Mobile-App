@@ -1,7 +1,7 @@
 import 'package:archmage_app/components/app_bar.dart';
-import 'package:flutter/material.dart';
-
 import 'package:archmage_app/utils/app_colors.dart';
+import 'package:archmage_app/utils/text_styles.dart';
+import 'package:flutter/material.dart';
 
 class ArchlabsPage extends StatelessWidget {
   const ArchlabsPage({super.key});
@@ -17,7 +17,7 @@ class ArchlabsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Fixed image + black section
+              //  black section
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -39,24 +39,14 @@ class ArchlabsPage extends StatelessWidget {
                       children: [
                         Text(
                           "ArchLabs\nTraining",
-                          style: TextStyle(
-                            fontSize: 48,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.white,
-                            height: 1.2,
-                          ),
+                          style: TextStyles.size48WeightboldvisbycfBold,
                         ),
                         const SizedBox(height: 15),
                         Text(
                           "As the demand for professionals with hands-on experience ever increasing. "
                           "We train fresh IT Graduates/Qualified individuals to match our partner company requirements.\n\n"
                           "For our partner companies its a focused BENCH!",
-                          style: const TextStyle(
-                            color: AppColors.white,
-                            fontSize: 15,
-                            height: 1.4,
-                            fontFamily: 'visbycf-medium',
-                          ),
+                          style: TextStyles.size15visbycfmedium,
                         ),
                         const SizedBox(height: 30),
                         Column(
@@ -75,11 +65,7 @@ class ArchlabsPage extends StatelessWidget {
                               ),
                               child: const Text(
                                 "Join with archLabs",
-                                style: TextStyle(
-                                  color: AppColors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                ),
+                                style: TextStyles.size15WeightboldvisbycfBold,
                               ),
                             ),
                             const SizedBox(height: 12),
@@ -96,11 +82,7 @@ class ArchlabsPage extends StatelessWidget {
                               ),
                               child: const Text(
                                 "Hire resources",
-                                style: TextStyle(
-                                  color: AppColors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15,
-                                ),
+                                style: TextStyles.size15WeightboldvisbycfBold,
                               ),
                             ),
                           ],
@@ -117,11 +99,7 @@ class ArchlabsPage extends StatelessWidget {
                   children: [
                     Text(
                       "Our Team",
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.black,
-                      ),
+                      style: TextStyles.size25WeightboldvisbycfBoldblack,
                     ),
                     const Spacer(),
                     Icon(
@@ -144,17 +122,12 @@ class ArchlabsPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: RichText(
                   text: const TextSpan(
-                    style: TextStyle(
-                      fontSize: 27,
-                      fontWeight: FontWeight.normal,
-                      color: AppColors.black,
-                      fontFamily: 'visbycf-medium',
-                    ),
+                    style: TextStyles.size27visbycfBold,
                     children: [
                       TextSpan(text: "What's happening\nat "),
                       TextSpan(
                         text: "arch",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyles.size27WeightboldvisbycfBold,
                       ),
                       TextSpan(text: "Labs?"),
                     ],
@@ -191,20 +164,12 @@ class ArchlabsPage extends StatelessWidget {
                   children: [
                     const Text(
                       "Hiring Now",
-                      style: TextStyle(
-                        color: AppColors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: TextStyles.size25Weightboldvisbycfmedium,
                     ),
                     const SizedBox(height: 8),
                     const Text(
                       "Limited slots available. Hurry up now!",
-                      style: TextStyle(
-                        color: AppColors.white,
-                        fontSize: 14,
-                        fontFamily: 'visbycf-medium',
-                      ),
+                      style: TextStyles.size14visbycfmedium,
                     ),
                     const SizedBox(height: 20),
                     GestureDetector(
@@ -249,8 +214,8 @@ class ArchlabsPage extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: AppColors.black,
-                  blurRadius: 8,
-                  offset: const Offset(0, 4),
+                  blurRadius: 0.01,
+                  offset: const Offset(0, 0),
                 ),
               ],
             ),
@@ -269,30 +234,15 @@ class ArchlabsPage extends StatelessWidget {
                     ),
                     child: const Text(
                       "In the making",
-                      style: TextStyle(
-                        color: AppColors.white,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: TextStyles.size12WeightboldvisbycfBold,
                     ),
                   ),
                   const SizedBox(height: 10),
                   Text(
                     name,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                      color: AppColors.black,
-                    ),
+                    style: TextStyles.size25WeightboldvisbycfBoldblack,
                   ),
-                  Text(
-                    title,
-                    style: TextStyle(
-                      color: AppColors.gray92,
-                      fontSize: 14,
-                      fontFamily: 'visbycf-medium',
-                    ),
-                  ),
+                  Text(title, style: TextStyles.size14visbycfmediumgray92),
                   const SizedBox(height: 14),
                   Wrap(
                     spacing: 10,
@@ -323,11 +273,7 @@ class ArchlabsPage extends StatelessWidget {
                     ),
                     child: const Text(
                       "View Profile",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.white,
-                      ),
+                      style: TextStyles.size16WeightboldvisbycfBold,
                     ),
                   ),
                 ],
@@ -379,27 +325,16 @@ class ArchlabsPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 18),
-          Text(
-            title,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-              fontFamily: 'visbycf-bold',
-              color: AppColors.black,
-            ),
-          ),
+          Text(title, style: TextStyles.size18WeightboldvisbycfBoldblack),
           const SizedBox(height: 6),
           RichText(
             text: TextSpan(
               text: description,
-              style: const TextStyle(color: AppColors.gray92, fontSize: 15),
+              style: TextStyles.size15visbycfregular,
               children: const [
                 TextSpan(
                   text: " Read More....",
-                  style: TextStyle(
-                    color: AppColors.red,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  style: TextStyles.size15visbycfregularred,
                 ),
               ],
             ),
