@@ -1,10 +1,9 @@
 import 'package:archmage_app/screens/about_page.dart';
-import 'package:archmage_app/screens/archlabs_labs.dart';
+import 'package:archmage_app/screens/archlabs.dart';
 import 'package:archmage_app/screens/blog_page.dart';
 import 'package:archmage_app/screens/career.dart';
 import 'package:archmage_app/screens/contact_page.dart';
 import 'package:flutter/material.dart';
-import 'package:archmage_app/components/asset_paths.dart';
 import 'package:archmage_app/utils/app_colors.dart';
 import 'login_page.dart';
 
@@ -42,7 +41,9 @@ class MenuNavigation extends StatelessWidget {
                 const SizedBox(height: 10),
 
                 // Logo (centered)
-                Center(child: Image.asset(AssetPaths.am2, height: 100)),
+                Center(
+                  child: Image.asset('assets/images/am2.png', height: 100),
+                ),
 
                 const SizedBox(height: 50),
 
@@ -102,10 +103,10 @@ class MenuNavigation extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    _buildSocialIcon(AssetPaths.fb, size: 25),
-                    _buildSocialIcon(AssetPaths.linkedin),
-                    _buildSocialIcon(AssetPaths.twitter),
-                    _buildSocialIcon(AssetPaths.insta),
+                    _buildSocialIcon('assets/images/fb.png', size: 25),
+                    _buildSocialIcon('assets/images/linkedin.png'),
+                    _buildSocialIcon('assets/images/twitter.png'),
+                    _buildSocialIcon('assets/images/insta.png'),
                   ],
                 ),
 
