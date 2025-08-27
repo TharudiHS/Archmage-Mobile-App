@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:archmage_app/components/app_bar.dart';
-import 'package:archmage_app/components/asset_paths.dart';
 import 'package:archmage_app/utils/app_colors.dart';
 import 'dart:math';
 
@@ -21,7 +20,7 @@ class BlogPage extends StatelessWidget {
               height: 280,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(AssetPaths.blogbanner),
+                  image: AssetImage('assets/images/blog_banner.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -65,7 +64,7 @@ class BlogPage extends StatelessWidget {
 
             // Blog list
             _buildBlogCard(
-              imagePath: AssetPaths.img2,
+              imagePath: 'assets/images/img2.jpeg',
               title: "Indula and Chanuga Joining ecological",
               description:
                   "In just 10 months our two best React resources join \na leading firm.",
@@ -73,7 +72,7 @@ class BlogPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             _buildBlogCard(
-              imagePath: AssetPaths.img3,
+              imagePath: 'assets/images/img3.png',
               title: "Catch up with INVIVOS & CAD teams",
               description:
                   "Checking on continuous improvements on the \nteams.",
@@ -81,7 +80,7 @@ class BlogPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             _buildBlogCard(
-              imagePath: AssetPaths.img4,
+              imagePath: 'assets/images/img4.png',
               title: "INVIVOS offer letters for 4 Engineers",
               description:
                   "We love developing brilliant brains. They simply get \npicked up by great companies.",
@@ -89,7 +88,7 @@ class BlogPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             _buildBlogCard(
-              imagePath: AssetPaths.img2,
+              imagePath: 'assets/images/img2.jpeg',
               title: "Indula and Chanuga Joining ecological",
               description:
                   "In just 10 months our two best React resources join \na leading firm.",
@@ -97,7 +96,7 @@ class BlogPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             _buildBlogCard(
-              imagePath: AssetPaths.img3,
+              imagePath: 'assets/images/img3.png',
               title: "Catch up with INVIVOS & CAD teams",
               description:
                   "Checking on continuous improvements on the \nteams.",
@@ -105,7 +104,7 @@ class BlogPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             _buildBlogCard(
-              imagePath: AssetPaths.img4,
+              imagePath: 'assets/images/img4.png',
               title: "INVIVOS offer letters for 4 Engineers",
               description:
                   "We love developing brilliant brains. They simply get \npicked up by great companies.",
