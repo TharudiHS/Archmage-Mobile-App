@@ -1,6 +1,6 @@
 import 'package:archmage_app/components/app_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:archmage_app/components/asset_paths.dart';
+
 import 'package:archmage_app/utils/app_colors.dart';
 
 class ArchlabsPage extends StatelessWidget {
@@ -22,7 +22,7 @@ class ArchlabsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
-                    AssetPaths.img1,
+                    'assets/images/img1.jpg',
                     width: double.infinity,
                     height: 220,
                     fit: BoxFit.cover,
@@ -164,17 +164,17 @@ class ArchlabsPage extends StatelessWidget {
               const SizedBox(height: 10),
               _buildNewsItem(
                 "Indula and Chanuga Joining ecologital",
-                AssetPaths.img2,
+                'assets/images/img2.jpeg',
                 "In just 10 months our two best React resources join a leading firm.",
               ),
               _buildNewsItem(
                 "Catch up with INIVOS & CAD teams",
-                AssetPaths.img3,
+                'assets/images/img3.png',
                 "Checking on continuous improvements on the \nteams.",
               ),
               _buildNewsItem(
                 "INIVOS offer letters for 4 Engineers",
-                AssetPaths.img4,
+                'assets/images/img4.png',
                 "We love developing brilliant brains. They simply get Npicked up by great companies ",
               ),
               const SizedBox(height: 20),
@@ -337,7 +337,7 @@ class ArchlabsPage extends StatelessWidget {
           const Positioned(
             top: 0,
             child: CircleAvatar(
-              backgroundImage: AssetImage(AssetPaths.profile),
+              backgroundImage: AssetImage('assets/images/profile.jpeg'),
               radius: 60,
             ),
           ),
