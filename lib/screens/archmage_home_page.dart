@@ -145,8 +145,8 @@ class _ArchmageHomePageState extends State<ArchmageHomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Image.asset('assets/images/EAP.png', height: 45),
-                        Image.asset('assets/images/dialog.png', height: 45),
-                        Image.asset('assets/images/MIMT.png', height: 45),
+                        Image.asset('assets/images/dialog.jpg', height: 45),
+                        Image.asset('assets/images/MIMT.jpeg', height: 45),
                         Image.asset('assets/images/scope.jpg', height: 45),
                       ],
                     ),
