@@ -576,7 +576,7 @@ Widget _buildTechnologyStack() {
           'assets/images/aws.png',
           'assets/images/azure.png',
           'assets/images/cloud.png',
-          'assets/images/digitalocean.png',
+          'assets/images/digitalocean .png',
         ]),
       ],
     ),
@@ -655,15 +655,15 @@ Widget _buildWhyArchmageSection() {
           childAspectRatio: 0.95,
           children: [
             _whyArchmageGridItem(
-              imagePath: 'assets/images/clientfocused.png',
+              imagePath: 'assets/images/client_focused.png',
               label: 'Client focused',
             ),
             _whyArchmageGridItem(
-              imagePath: 'assets/images/domainexperts.png',
+              imagePath: 'assets/images/domain_experts.png',
               label: 'Domain experts',
             ),
             _whyArchmageGridItem(
-              imagePath: 'assets/images/reliablefast.png',
+              imagePath: 'assets/images/reliable_fast.png',
               label: 'Reliable & Fast Delivery',
             ),
             _whyArchmageGridItem(
@@ -671,7 +671,7 @@ Widget _buildWhyArchmageSection() {
               label: 'Flexible',
             ),
             _whyArchmageGridItem(
-              imagePath: 'assets/images/engineeringquality.png',
+              imagePath: 'assets/images/engineering_quality.png',
               label: 'Engineering Quality',
             ),
             _whyArchmageGridItem(
